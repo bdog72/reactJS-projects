@@ -7,6 +7,7 @@ import './practice.scss';
 
 const books = [
   {
+    id: 1,
     img:
       'https://images-na.ssl-images-amazon.com/images/I/81eB%2B7%2BCkUL._AC_UL200_SR200,200_.jpg',
     title: 'I love you to the moon and back',
@@ -14,6 +15,7 @@ const books = [
   },
 
   {
+    id: 2,
     img:
       'https://images-na.ssl-images-amazon.com/images/I/91uwocAMtSL._AC_UL200_SR200,200_.jpg',
     title: 'A Promised Land',
@@ -21,21 +23,23 @@ const books = [
   },
 ];
 
-const names = ['a', 'b', 'c'];
-const newNames = names.map((name) => <h1>{name}</h1>);
-
 function BookList() {
-  return <section className='booklist__section'>{newNames}</section>;
+  return (
+    <section className='booklist__section'>
+      {books.map((book) => {
+        return <Book key={book.id} {...book}></Book>;
+      })}
+    </section>
+  );
 }
 
-const Book = (props) => {
-  const { img, title, author } = props;
+const Book = ({ img, title, author }) => {
+  // const { img, title, author } = props;
   return (
     <article className='book'>
       <img src={img} alt='book' />
       <h1>{title}</h1>
       <h4>{author}</h4>
-      {props.children}
     </article>
   );
 };
