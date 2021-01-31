@@ -14,8 +14,8 @@ export default function App() {
       <div>
         <div className='App__a'>
           <Link to='/'>Home</Link>
-          <Link to='/practice'>0) Practice</Link>
-          <Link to='/birthday-reminder'>1) - Birthday Reminder</Link>
+          <Link to='/practice'>0 - Practice</Link>
+          <Link to='/birthday-reminder'>1 - Birthday Reminder</Link>
         </div>
 
         <hr />
