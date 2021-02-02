@@ -11,16 +11,33 @@
 
 .app__link-container {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
+  justify-content: space-around;
+  // justify-content: space-between;
+  // justify-content: space-evenly;
   flex-wrap: wrap;
-  background-color: grey;
+  background-color: #000;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+  }
 
   a {
-    margin: 10px;
-    font-size: 1.4rem;
+    margin: 5px 0;
+    // width: 225px;
+    font-size: 1.2rem;
     font-family: 'Yusei Magic', sans-serif;
     text-decoration: none;
     color: #000;
     color: #fff;
+    // border: 1px solid #fff;
+  }
+
+  @media screen and (max-width: 500px) {
+    a {
+      font-size: 1rem;
+      // width: 175px;
+    }
   }
 }
