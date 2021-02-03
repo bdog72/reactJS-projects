@@ -5,39 +5,24 @@
 
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
-.app__link-container {
+.basicexample__link-container {
   display: flex;
-  // justify-content: center;
-  justify-content: space-around;
-  // justify-content: space-between;
-  // justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
   background-color: #000;
 
-  .item {
-    display: flex;
-    flex-direction: column;
-  }
-
   a {
-    margin: 5px 0;
-    // width: 225px;
-    font-size: 1.2rem;
+    margin: 10px 0 15px 0;
     font-family: 'Yusei Magic', sans-serif;
     text-decoration: none;
-    color: #000;
+    font-size: 1.5rem;
     color: #fff;
-    // border: 1px solid #fff;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 520px) {
     a {
-      font-size: 1rem;
-      // width: 175px;
+      font-size: 1.1rem;
     }
   }
 }
