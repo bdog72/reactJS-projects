@@ -8,14 +8,17 @@ import './index.scss';
 
 import BirthdayReminder from './projects-1-2-3/1-birthday-reminder/setup/src/App';
 
+import Tours from './projects-1-2-3/2-tours/setup/src/App';
+import Reviews from './projects-1-2-3/3-reviews/setup/src/App';
+
 export default function BasicExample() {
   return (
     <Router>
       <div>
         <div className='basicexample__link-container'>
           <Link to='/birthday-reminder'>Birthday Reminder</Link>
-          <Link to='/about'>About</Link>
-          <Link to='/dashboard'>Dashboard</Link>
+          <Link to='/tours'>Tours</Link>
+          <Link to='/reviews'>Reviews</Link>
         </div>
 
         {/* <hr /> */}
@@ -24,11 +27,11 @@ export default function BasicExample() {
           <Route exact path='/birthday-reminder'>
             <BirthdayReminder />
           </Route>
-          <Route path='/about'>
-            <About />
+          <Route path='/tours'>
+            <Tours />
           </Route>
-          <Route path='/dashboard'>
-            <Dashboard />
+          <Route path='/reviews'>
+            <Reviews />
           </Route>
         </Switch>
       </div>
@@ -47,13 +50,13 @@ export default function BasicExample() {
 //   );
 // }
 
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-}
+// function About() {
+//   return (
+//     <div>
+//       <h2>About</h2>
+//     </div>
+//   );
+// }
 
 function Dashboard() {
   return (

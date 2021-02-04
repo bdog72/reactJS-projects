@@ -68,9 +68,11 @@ body {
 ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -86,9 +88,11 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+
 h3 {
   font-size: 1.25rem;
 }
+
 h4 {
   font-size: 0.875rem;
 }
@@ -96,6 +100,7 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -119,6 +124,7 @@ p {
     line-height: 1;
   }
 }
+
 /*  global classes */
 
 /* section */
@@ -151,11 +157,13 @@ p {
 Tours
 ===============
 */
+
 main {
   width: 90vw;
   max-width: var(--fixed-width);
   margin: 5rem auto;
 }
+
 .loading {
   text-align: center;
 }
