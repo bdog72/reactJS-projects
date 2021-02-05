@@ -39,8 +39,10 @@ function App() {
   if (tours.length === 0) {
     return (
       <main className='bozo_title'>
-        <h2>No tours left Bozo</h2>
-        <button onClick={() => fetchTours()}>Refresh</button>
+        <h2>No tours left</h2>
+        <button className='btn' onClick={() => fetchTours()}>
+          Refresh
+        </button>
       </main>
     );
   }
