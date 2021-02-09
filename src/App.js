@@ -6,62 +6,52 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import './index.scss';
 
-import BirthdayReminder from './projects-1-2-3/1-birthday-reminder/setup/src/App';
+import A from './projects-1-2-3/1-a/src/App';
+import B from './projects-1-2-3/2-b/src/App';
+import C from './projects-1-2-3/3-c/src/App';
 
-import Tours from './projects-1-2-3/2-tours/setup/src/App';
-import Reviews from './projects-1-2-3/3-reviews/setup/src/App';
+import D from './projects-4-5-6/4-d/src/App';
+import E from './projects-4-5-6/5-e/src/App';
+import F from './projects-4-5-6/6-f/src/App';
 
-export default function BasicExample() {
+export default function App() {
   return (
     <Router>
-      <div>
-        <div className='basicexample__link-container'>
-          <Link to='/birthday-reminder'>Birthday Reminder</Link>
-          <Link to='/tours'>Tours</Link>
-          <Link to='/reviews'>Reviews</Link>
+      <div className='app__router-container'>
+        <div>
+          <Link to='/a'>Birthday Reminder</Link>
+          <Link to='/b'>Bbbbbb</Link>
+          <Link to='/c'>Cccccc</Link>
         </div>
-
-        {/* <hr /> */}
-
-        <Switch>
-          <Route exact path='/birthday-reminder'>
-            <BirthdayReminder />
-          </Route>
-          <Route path='/tours'>
-            <Tours />
-          </Route>
-          <Route path='/reviews'>
-            <Reviews />
-          </Route>
-        </Switch>
+        <div>
+          <Link to='/d'>Dddddd</Link>
+          <Link to='/e'>Eeeeee</Link>
+          <Link to='/f'>Ffffff</Link>
+        </div>
       </div>
+
+      <hr />
+
+      <Switch>
+        <Route path='/a'>
+          <A />
+        </Route>
+        <Route path='/b'>
+          <B />
+        </Route>
+        <Route path='/c'>
+          <C />
+        </Route>
+        <Route path='/d'>
+          <D />
+        </Route>
+        <Route path='/e'>
+          <E />
+        </Route>
+        <Route path='/f'>
+          <F />
+        </Route>
+      </Switch>
     </Router>
   );
 }
-
-// You can think of these components as "pages"
-// in your app.
-
-// function Home() {
-//   return (
-//     <div>
-//       <h2>Home</h2>
-//     </div>
-//   );
-// }
-
-// function About() {
-//   return (
-//     <div>
-//       <h2>About</h2>
-//     </div>
-//   );
-// }
-
-// function Dashboard() {
-//   return (
-//     <div>
-//       <h2>Dashboard</h2>
-//     </div>
-//   );
-// }

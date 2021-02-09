@@ -7,22 +7,27 @@
   margin: 0;
 }
 
-.basicexample__link-container {
+.app__router-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  flex-direction: row;
   background-color: #000;
 
   a {
-    margin: 10px 0 15px 0;
+    display: block;
+    // border: 1px solid black;
+    // padding: 10px;
     font-family: 'Yusei Magic', sans-serif;
+    margin: 10px 0;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
   }
 
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 500px) {
     a {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      margin: 5px 0;
     }
   }
 }
