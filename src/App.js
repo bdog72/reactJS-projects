@@ -19,7 +19,7 @@ export default function App() {
     <Router>
       <div className='app__router-container'>
         <div>
-          <Link to='/a'>Birthday Reminder</Link>
+          <Link to='/birthday-reminder'>Birthday Reminder</Link>
           <Link to='/b'>Bbbbbb</Link>
           <Link to='/c'>Cccccc</Link>
         </div>
@@ -33,7 +33,7 @@ export default function App() {
       <hr />
 
       <Switch>
-        <Route path='/a'>
+        <Route path='/birthday-reminder'>
           <A />
         </Route>
         <Route path='/b'>

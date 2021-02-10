@@ -177,9 +177,11 @@ main {
 .person h4 {
   margin-bottom: 0.35rem;
 }
+
 .person p {
   margin-bottom: 0;
 }
+
 .container button {
   color: var(--clr-white);
   display: block;
