@@ -3,8 +3,7 @@
 
 import React from 'react';
 
-function List({ people }) {
-  // const { id, name, age, image } = people;
+const List = ({ people }) => {
   return (
     <>
       {people.map((person) => {
@@ -21,6 +20,6 @@ function List({ people }) {
       })}
     </>
   );
-}
+};
 
 export default List;

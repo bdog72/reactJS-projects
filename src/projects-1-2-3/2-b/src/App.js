@@ -1,13 +1,14 @@
 //
 //
+
 import React from 'react';
 
-const App = () => {
+function Tours() {
   return (
     <div>
-      <h1>B</h1>
+      <h1>Tours</h1>
     </div>
   );
-};
+}
 
-export default App;
+export default Tours;
