@@ -4,10 +4,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-import './index.scss';
-
-// import BirthdayReminder from './projects-1-2-3/1-a/src/App';
-// import Tours from './projects-1-2-3/2-b/src/App';
+import './main.scss';
 
 import BirthdayReminder from './projects-1-2-3/1-a/src/App';
 import Tours from './projects-1-2-3/2-b/src/App';
@@ -24,8 +21,6 @@ export default function App() {
       <div className='app__router-container'>
         <div>
           <Link to='/birthday-reminder'>Birthday Reminder</Link>
-          {/* <Link to='/birthday-reminder'>Birthday Reminder</Link>
-          <Link to='/tours'>Tours</Link> */}
           <Link to='/tours'>Tours</Link>
           <Link to='/c'>Cccccc</Link>
         </div>
@@ -39,18 +34,12 @@ export default function App() {
       <hr />
 
       <Switch>
-        <Route path='/birthday-reminder'>
-          <BirthdayReminder />
-        </Route>
-        <Route path='/tours'>
-          <Tours />
-        </Route>
-        {/* <Route exact path='/birthday-reminder'>
+        <Route exact path='/birthday-reminder'>
           <BirthdayReminder />
         </Route>
         <Route exact path='/tours'>
           <Tours />
-        </Route> */}
+        </Route>
         <Route path='/c'>
           <C />
         </Route>

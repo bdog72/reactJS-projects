@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 
-:root {
+.app__1-main-container {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(162, 61%, 89%);
   --clr-primary-2: hsl(162, 60%, 78%);
@@ -41,17 +41,7 @@
   --max-width: 1170px;
   --fixed-width: 450px;
   --clr-pink: #f28ab2;
-}
 
-// *,
-// ::after,
-// ::before {
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-// }
-
-.app__1-main-container {
   font-family: 'Yusei Magic', sans-serif;
   background: var(--clr-pink);
   color: var(--clr-grey-9);
