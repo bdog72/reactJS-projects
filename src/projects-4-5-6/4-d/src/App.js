@@ -1,13 +1,20 @@
-//
-//
-import React from 'react';
+/* eslint-disable no-unused-vars */
 
-const App = () => {
+//
+//
+
+import React, { useState } from 'react';
+import data from './data';
+
+import './index.scss';
+import SingleQuestion from './Question';
+
+function App() {
   return (
-    <div>
-      <h1>D</h1>
+    <div className='app__4-main-container'>
+      <h2>accordion project setup</h2>
     </div>
   );
-};
+}
 
 export default App;

@@ -9,9 +9,9 @@ import './main.scss';
 import BirthdayReminder from './projects-1-2-3/1-a/src/App';
 import Tours from './projects-1-2-3/2-b/src/App';
 
-import C from './projects-1-2-3/3-c/src/App';
+import Reviews from './projects-1-2-3/3-c/src/App';
 
-import D from './projects-4-5-6/4-d/src/App';
+import Accordion from './projects-4-5-6/4-d/src/App';
 import E from './projects-4-5-6/5-e/src/App';
 import F from './projects-4-5-6/6-f/src/App';
 
@@ -22,10 +22,10 @@ export default function App() {
         <div>
           <Link to='/birthday-reminder'>Birthday Reminder</Link>
           <Link to='/tours'>Tours</Link>
-          <Link to='/c'>Cccccc</Link>
+          <Link to='/reviews'>Reviews</Link>
         </div>
         <div>
-          <Link to='/d'>Dddddd</Link>
+          <Link to='/accordion'>Accordion</Link>
           <Link to='/e'>Eeeeee</Link>
           <Link to='/f'>Ffffff</Link>
         </div>
@@ -34,17 +34,17 @@ export default function App() {
       <hr />
 
       <Switch>
-        <Route exact path='/birthday-reminder'>
+        <Route path='/birthday-reminder'>
           <BirthdayReminder />
         </Route>
-        <Route exact path='/tours'>
+        <Route path='/tours'>
           <Tours />
         </Route>
-        <Route path='/c'>
-          <C />
+        <Route path='/reviews'>
+          <Reviews />
         </Route>
-        <Route path='/d'>
-          <D />
+        <Route path='/accordion'>
+          <Accordion />
         </Route>
         <Route path='/e'>
           <E />
