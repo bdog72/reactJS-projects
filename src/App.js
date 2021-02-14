@@ -12,7 +12,7 @@ import Tours from './projects-1-2-3/2-b/src/App';
 import Reviews from './projects-1-2-3/3-c/src/App';
 
 import Accordion from './projects-4-5-6/4-d/src/App';
-import E from './projects-4-5-6/5-e/src/App';
+import Menu from './projects-4-5-6/5-e/src/App';
 import F from './projects-4-5-6/6-f/src/App';
 
 export default function App() {
@@ -26,7 +26,7 @@ export default function App() {
         </div>
         <div>
           <Link to='/accordion'>Accordion</Link>
-          <Link to='/e'>Eeeeee</Link>
+          <Link to='/menu'>Menu</Link>
           <Link to='/f'>Ffffff</Link>
         </div>
       </div>
@@ -46,8 +46,8 @@ export default function App() {
         <Route path='/accordion'>
           <Accordion />
         </Route>
-        <Route path='/e'>
-          <E />
+        <Route path='/menu'>
+          <Menu />
         </Route>
         <Route path='/f'>
           <F />
