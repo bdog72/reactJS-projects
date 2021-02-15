@@ -18,22 +18,16 @@ import F from './projects-4-5-6/6-f/src/App';
 export default function App() {
   return (
     <Router>
-      <center>React Projects</center>
       <div className='app__router-container'>
         <div>
-          <Link to='/birthday-reminder'>- 1 -</Link>
-          <Link to='/tours'>- 2 -</Link>
-          <Link to='/reviews'>- 3 -</Link>
+          <Link to='/birthday-reminder'>Birthday Reminder</Link>
+          <Link to='/tours'>Tours</Link>
+          <Link to='/reviews'>Reviews</Link>
         </div>
         <div>
-          <Link to='/accordion'>- 4 -</Link>
-          <Link to='/menu'>- 5 -</Link>
-          <Link to='/f'>- 6 -</Link>
-        </div>
-        <div>
-          <Link to='/accordion'>- 7 -</Link>
-          <Link to='/menu'>- 8 -</Link>
-          <Link to='/f'>- 9 -</Link>
+          <Link to='/accordion'>Accordion</Link>
+          <Link to='/menu'>Menu</Link>
+          <Link to='/f'>Ffffff</Link>
         </div>
       </div>
 

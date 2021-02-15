@@ -15,6 +15,11 @@
   box-sizing: border-box;
 }
 
+center {
+  font-size: 3rem;
+  font-family: 'Yusei Magic', sans-serif;
+}
+
 .app__router-container {
   display: flex;
   justify-content: space-around;
@@ -30,6 +35,10 @@
     text-decoration: none;
     font-size: 1.2rem;
     color: #fff;
+  }
+
+  :hover {
+    color: red;
   }
 
   @media screen and (max-width: 500px) {
