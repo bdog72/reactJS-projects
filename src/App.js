@@ -10,10 +10,15 @@ import BirthdayReminder from './projects-1-2-3/1-a/src/App';
 import Tours from './projects-1-2-3/2-b/src/App';
 
 import Reviews from './projects-1-2-3/3-c/src/App';
-
 import Accordion from './projects-4-5-6/4-d/src/App';
+
 import Menu from './projects-4-5-6/5-e/src/App';
-import F from './projects-4-5-6/6-f/src/App';
+import Tabs from './projects-4-5-6/6-f/src/App';
+
+import Slider from './projects-7-8-9/7-g/src/App';
+import Lorem from './projects-7-8-9/8-h/src/App';
+
+import Color from './projects-7-8-9/9-i/src/App';
 
 export default function App() {
   return (
@@ -28,12 +33,12 @@ export default function App() {
         <div>
           <Link to='/accordion'>- 4 -</Link>
           <Link to='/menu'>- 5 -</Link>
-          <Link to='/f'>- 6 -</Link>
+          <Link to='/tabs'>- 6 -</Link>
         </div>
         <div>
-          <Link to='/accordion'>- 7 -</Link>
-          <Link to='/menu'>- 8 -</Link>
-          <Link to='/f'>- 9 -</Link>
+          <Link to='/slider'>- 7 -</Link>
+          <Link to='/lorem'>- 8 -</Link>
+          <Link to='/color'>- 9 -</Link>
         </div>
       </div>
 
@@ -55,8 +60,17 @@ export default function App() {
         <Route path='/menu'>
           <Menu />
         </Route>
-        <Route path='/f'>
-          <F />
+        <Route path='/tabs'>
+          <Tabs />
+        </Route>
+        <Route path='/slider'>
+          <Slider />
+        </Route>
+        <Route path='/lorem'>
+          <Lorem />
+        </Route>
+        <Route path='/color'>
+          <Color />
         </Route>
       </Switch>
     </Router>
