@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import './main.scss';
 
+// import Tutorial from './tutorial/4-forms/setup/2-multiple-inputs';
+
 import BirthdayReminder from './projects-1-2-3/1-a/src/App';
 import Tours from './projects-1-2-3/2-b/src/App';
 
@@ -18,12 +20,13 @@ import Tabs from './projects-4-5-6/6-f/src/App';
 import Slider from './projects-7-8-9/7-g/src/App';
 import Lorem from './projects-7-8-9/8-h/src/App';
 
-import Color from './projects-7-8-9/9-i/src/App';
-
 export default function App() {
   return (
     <Router>
       <center>React Projects</center>
+
+      {/* <Link to='/tutorial'>- TUTORIAL -</Link> */}
+
       <div className='app__router-container'>
         <div>
           <Link to='/birthday-reminder'>- 1 -</Link>
@@ -38,13 +41,15 @@ export default function App() {
         <div>
           <Link to='/slider'>- 7 -</Link>
           <Link to='/lorem'>- 8 -</Link>
-          <Link to='/color'>- 9 -</Link>
         </div>
       </div>
 
       <hr />
 
       <Switch>
+        {/* <Route path='/tutorial'>
+          <Tutorial />
+        </Route> */}
         <Route path='/birthday-reminder'>
           <BirthdayReminder />
         </Route>
@@ -68,9 +73,6 @@ export default function App() {
         </Route>
         <Route path='/lorem'>
           <Lorem />
-        </Route>
-        <Route path='/color'>
-          <Color />
         </Route>
       </Switch>
     </Router>
