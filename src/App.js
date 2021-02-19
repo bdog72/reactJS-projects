@@ -20,6 +20,9 @@ import Tabs from './projects-4-5-6/6-f/src/App';
 import Slider from './projects-7-8-9/7-g/src/App';
 import Lorem from './projects-7-8-9/8-h/src/App';
 
+import ColorGenerator from './projects-7-8-9/9-i/src/App';
+import Grocery from './projects-10-11-12/10-j/src/App';
+
 export default function App() {
   return (
     <Router>
@@ -41,6 +44,12 @@ export default function App() {
         <div>
           <Link to='/slider'>- 7 -</Link>
           <Link to='/lorem'>- 8 -</Link>
+          <Link to='/color-generator'>- 9 -</Link>
+        </div>
+        <div>
+          <Link to='/grocery'>- 10 -</Link>
+          <Link to='/'>- 11 -</Link>
+          <Link to='/'>- 12 -</Link>
         </div>
       </div>
 
@@ -73,6 +82,12 @@ export default function App() {
         </Route>
         <Route path='/lorem'>
           <Lorem />
+        </Route>
+        <Route path='/color-generator'>
+          <ColorGenerator />
+        </Route>
+        <Route path='/grocery'>
+          <Grocery />
         </Route>
       </Switch>
     </Router>
