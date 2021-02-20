@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import './main.scss';
 
-// import Tutorial from './tutorial/4-forms/setup/2-multiple-inputs';
+// import Tutorial from './tutorial/5-useRef/setup/1-useRef-basics';
 
 import BirthdayReminder from './projects-1-2-3/1-a/src/App';
 import Tours from './projects-1-2-3/2-b/src/App';
@@ -22,6 +22,8 @@ import Lorem from './projects-7-8-9/8-h/src/App';
 
 import ColorGenerator from './projects-7-8-9/9-i/src/App';
 import Grocery from './projects-10-11-12/10-j/src/App';
+
+import Navbar from './projects-10-11-12/11-k/src/App';
 
 export default function App() {
   return (
@@ -48,7 +50,7 @@ export default function App() {
         </div>
         <div>
           <Link to='/grocery'>- 10 -</Link>
-          <Link to='/'>- 11 -</Link>
+          <Link to='/navbar'>- 11 -</Link>
           <Link to='/'>- 12 -</Link>
         </div>
       </div>
@@ -88,6 +90,9 @@ export default function App() {
         </Route>
         <Route path='/grocery'>
           <Grocery />
+        </Route>
+        <Route path='/navbar'>
+          <Navbar />
         </Route>
       </Switch>
     </Router>

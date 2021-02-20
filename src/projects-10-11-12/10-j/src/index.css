@@ -119,6 +119,7 @@ p {
     line-height: 1;
   }
 }
+
 .btn {
   text-transform: uppercase;
   background: transparent;
@@ -158,6 +159,7 @@ main {
   display: grid;
   place-items: center;
 }
+
 /*
 =============== 
 Grocery List
