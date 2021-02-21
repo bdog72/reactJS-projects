@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import './main.scss';
 
-// import Tutorial from './tutorial/5-useRef/setup/1-useRef-basics';
+// import Tutorial from './tutorial/8-useContext/setup/1-context-api';
 
 import BirthdayReminder from './projects-1-2-3/1-a/src/App';
 import Tours from './projects-1-2-3/2-b/src/App';
@@ -24,6 +24,7 @@ import ColorGenerator from './projects-7-8-9/9-i/src/App';
 import Grocery from './projects-10-11-12/10-j/src/App';
 
 import Navbar from './projects-10-11-12/11-k/src/App';
+import Sidebar from './projects-10-11-12/12-l/src/App';
 
 export default function App() {
   return (
@@ -51,8 +52,13 @@ export default function App() {
         <div>
           <Link to='/grocery'>- 10 -</Link>
           <Link to='/navbar'>- 11 -</Link>
-          <Link to='/'>- 12 -</Link>
+          <Link to='/sidebar'>- 12 -</Link>
         </div>
+        {/* <div>
+          <Link to='/grocery'>- 10 -</Link>
+          <Link to='/navbar'>- 11 -</Link>
+          <Link to='/sidebar'>- 12 -</Link>
+        </div> */}
       </div>
 
       <hr />
@@ -93,6 +99,9 @@ export default function App() {
         </Route>
         <Route path='/navbar'>
           <Navbar />
+        </Route>
+        <Route path='/sidebar'>
+          <Sidebar />
         </Route>
       </Switch>
     </Router>

@@ -195,9 +195,10 @@ p {
 .item p {
   margin-bottom: 0;
 }
+
 .modal {
   position: absolute;
-  top: 2rem;
+  top: 15rem;
   left: 50%;
   transform: translateX(-50%);
   background: var(--clr-white);
@@ -211,8 +212,9 @@ p {
   margin-bottom: 0;
   color: var(--clr-red-dark);
 }
+
 .form {
-  background: var(--clr-white);
+  background: var(--clr-grey-6);
   max-width: var(--fixed-width);
   margin: 0 auto;
   margin-bottom: 4rem;
