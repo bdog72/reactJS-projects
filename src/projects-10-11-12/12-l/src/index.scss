@@ -152,6 +152,7 @@ Home
     transition: var(--transition);
     cursor: pointer;
     animation: bounce 2s ease-in-out infinite;
+    outline: none;
   }
 
   @keyframes bounce {
