@@ -26,6 +26,8 @@ import Grocery from './projects-10-11-12/10-j/src/App';
 import Navbar from './projects-10-11-12/11-k/src/App';
 import Sidebar from './projects-10-11-12/12-l/src/App';
 
+import Stripe from './projects-13-14-15/13-m/src/App';
+
 export default function App() {
   return (
     <Router>
@@ -54,11 +56,11 @@ export default function App() {
           <Link to='/navbar'>- 11 -</Link>
           <Link to='/sidebar'>- 12 -</Link>
         </div>
-        {/* <div>
-          <Link to='/grocery'>- 10 -</Link>
-          <Link to='/navbar'>- 11 -</Link>
-          <Link to='/sidebar'>- 12 -</Link>
-        </div> */}
+        <div>
+          <Link to='/stripe'>- 13 -</Link>
+          <Link to='/cart'>- 14 -</Link>
+          <Link to='/cocktails'>- 15 -</Link>
+        </div>
       </div>
 
       <hr />
@@ -102,6 +104,9 @@ export default function App() {
         </Route>
         <Route path='/sidebar'>
           <Sidebar />
+        </Route>
+        <Route path='/stripe'>
+          <Stripe />
         </Route>
       </Switch>
     </Router>
