@@ -323,6 +323,7 @@
     z-index: 2;
     transform: scale(1);
   }
+
   .sidebar {
     width: 90vw;
     height: 95vh;
@@ -346,6 +347,7 @@
   .sidebar article {
     margin-bottom: 2rem;
   }
+
   .sidebar-sublinks {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -374,7 +376,8 @@
     background: var(--clr-white);
     box-shadow: var(--dark-shadow);
     position: absolute;
-    top: 4rem;
+    top: 17rem;
+    // top: 4rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;

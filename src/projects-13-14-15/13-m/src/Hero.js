@@ -7,11 +7,10 @@ import phoneImg from './images/phone.svg';
 import { useGlabalContext } from './context';
 
 const Hero = () => {
-  // eslint-disable-next-line no-unused-vars
   const { closeSubmenu } = useGlabalContext();
 
   return (
-    <section className='hero'>
+    <section className='hero' onMouseOver={closeSubmenu}>
       <div className='hero-center'>
         <article className='hero-info'>
           <h1>Payments infrastructure for the internet</h1>
