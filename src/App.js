@@ -27,6 +27,7 @@ import Navbar from './projects-10-11-12/11-k/src/App';
 import Sidebar from './projects-10-11-12/12-l/src/App';
 
 import Stripe from './projects-13-14-15/13-m/src/App';
+import Cart from './projects-13-14-15/14-n/src/App';
 
 export default function App() {
   return (
@@ -107,6 +108,9 @@ export default function App() {
         </Route>
         <Route path='/stripe'>
           <Stripe />
+        </Route>
+        <Route path='/cart'>
+          <Cart />
         </Route>
       </Switch>
     </Router>
