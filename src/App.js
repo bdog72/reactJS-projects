@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import './main.scss';
 
-// import Tutorial from './tutorial/8-useContext/setup/1-context-api';
+// import Tutorial from './tutorial/10-prop-types/setup/index';
 
 import BirthdayReminder from './projects-1-2-3/1-a/src/App';
 import Tours from './projects-1-2-3/2-b/src/App';
