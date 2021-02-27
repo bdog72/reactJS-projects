@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import './main.scss';
 
-// import Tutorial from './tutorial/10-prop-types/setup/index';
+// import Tutorial from './tutorial/11-react-router/setup';
+// import Tutorial from './tutorial/11-react-router/final';
 
 import BirthdayReminder from './projects-1-2-3/1-a/src/App';
 import Tours from './projects-1-2-3/2-b/src/App';
@@ -60,7 +61,7 @@ export default function App() {
         <div>
           <Link to='/stripe'>- 13 -</Link>
           <Link to='/cart'>- 14 -</Link>
-          <Link to='/cocktails'>- 15 -</Link>
+          {/* <Link to='/cocktails'>- 15 -</Link> */}
         </div>
       </div>
 
